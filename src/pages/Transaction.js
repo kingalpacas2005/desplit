@@ -1,5 +1,6 @@
 import React from 'react';
 import MetaMask from '../components/MetaMask';
+import ChooseMoney from '../components/ChooseMoney';
 
 const Transaction = () => {
     return (
@@ -19,6 +20,7 @@ const Transaction = () => {
                     <input type="text" name="Amount"></input></div>
                     <div className="elementForm elementFormCheck"><input type="checkbox" name="checkTransaction"></input><label for="checkTransaction">Immediate settlement on</label></div>
                     <div className="elementForm"><input type="submit" value="Submit"></input></div>
+                    <ChooseMoney></ChooseMoney>
                 </form>
             </div>
         </div>
