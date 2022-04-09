@@ -1,0 +1,21 @@
+.someMoney{
+
+    position:fixed;
+    transform:translateX(-100px);
+    .oneMoney{
+        background-color:rgb(121, 13, 172);
+        width:250px;
+        height:60px;
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+
+        &:hover{
+            background-color:rgb(216, 138, 252);
+        }
+
+        .money{
+            width:35px;
+        }
+    }
+}
