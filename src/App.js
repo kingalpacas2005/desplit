@@ -8,16 +8,25 @@ import NotFound from "./pages/NotFound";
 
 function App() {
 
-  return (
-    <BrowserRouter>
-      <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/groups/create" exact component={MakeGroup} />
-        <Route path="/groups/:id/transactions" exact component={GroupTransactions} />
-        <Route component={NotFound} />
-      </Switch>
-    </BrowserRouter>
-  );
+    return ( <
+        BrowserRouter >
+        <
+        Switch >
+        <
+        Route path = "/"
+        exact component = { Home }
+        /> <
+        Route path = "/groups/create"
+        exact component = { MakeGroup }
+        /> <
+        Route path = "/groups/:id/transactions"
+        exact component = { GroupTransactions }
+        /> <
+        Route component = { NotFound }
+        /> <
+        /Switch> <
+        /BrowserRouter>
+    );
 }
 
 export default App;
