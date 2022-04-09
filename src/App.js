@@ -3,13 +3,13 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import MakeGroup from "./pages/MakeGroup";
 import Home from "./pages/Home";
 import GroupTransactions from "./pages/GroupTransactions";
+import Transaction from "./pages/Transaction";
 import NotFound from "./pages/NotFound";
 
 
 function App() {
 
-    return ( <
-        BrowserRouter >
+    return ( < BrowserRouter >
         <
         Switch >
         <
@@ -22,9 +22,12 @@ function App() {
         Route path = "/groups/:id/transactions"
         exact component = { GroupTransactions }
         /> <
-        Route component = { NotFound }
+        Route path = "/transaction/create"
+        exact component = { Transaction }
         /> <
-        /Switch> <
+        Route component = { NotFound }
+        /> < /
+        Switch > <
         /BrowserRouter>
     );
 }

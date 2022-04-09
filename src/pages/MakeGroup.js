@@ -2,8 +2,11 @@ import React from 'react';
 import Button from '../components/Button';
 import MetaMask from '../components/MetaMask';
 
-const Home = () => {
 
+
+const MakeGroup = () => {
+
+  
 
     return (
         <div className="MakeGroup">
@@ -11,7 +14,7 @@ const Home = () => {
           <div className="selectGroup">
             <MetaMask></MetaMask>
             <div className="addGroup">
-              <input type="text" placeholder=""/>
+              <input type="text" placeholder="Enter Adress" classNames="EnterAdressGroup"/>
               <Button text="Add to group" clas="boutonAddGroup"></Button>
             </div>
             
@@ -32,4 +35,4 @@ const Home = () => {
 };
 
 
-export default Home;
+export default MakeGroup;
