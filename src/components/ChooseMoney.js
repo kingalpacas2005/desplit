@@ -7,13 +7,13 @@ const ChooseMoney = () => {
             <summary><div>Choose your money</div></summary>
             <lu className="someMoney">
                 <li className="oneMoney">
-                    Etherum <img src="" className="money"/>
+                    BitCoin <img src="./../img/BTC.png" className="money"/>
                 </li>
                 <li className="oneMoney">
-                    Etherum <img src="" className="money"/>
+                    Etherum <img src="./../img/ETH.png" className="money"/>
                 </li>
                 <li className="oneMoney">
-                    Etherum <img src="" className="money"/>
+                    USDT <img src="./../img/USDT.png" className="money"/>
                 </li>
             </lu>
             </details>
