@@ -1,15 +1,19 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import Home from "./pages/MakeGroup";
+import MakeGroup from "./pages/MakeGroup";
+import Home from "./pages/Home";
+import Validation from "./pages/Validation";
 import NotFound from "./pages/NotFound";
 
 
 function App() {
- 
+
   return (
     <BrowserRouter>
       <Switch>
-        <Route path="/MakeGroup" exact component={Home} />
+        <Route path="/" exact component={Home} />
+        <Route path="/MakeGroup" exact component={MakeGroup} />
+        <Route path="/Validation" exact component={Validation} />
         <Route component={NotFound} />
       </Switch>
     </BrowserRouter>
