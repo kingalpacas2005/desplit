@@ -1,0 +1,43 @@
+.sousCarreDas
+{
+    position:absolute;
+    width:100vw;
+    height:100vh;
+    top:0px;
+    left:0px;
+
+    .carreDas{
+        //border:1px solid black;
+        position:relative;
+        transform: rotate((-15deg));
+        
+        .ecartDas
+        {
+            position:absolute;
+            //transform: rotate((15deg));
+        }
+    
+        
+    
+        @for $i from 0 through 54{
+            .carte#{$i}{
+                transform: rotate(($i*4deg));
+                left:($i * 20px);
+                top:($i * 5px);
+            }
+    
+            .carteledRed#{$i}{
+                transform: rotate(($i*4deg - 10deg));
+                left:($i * 40px - 50);
+                top:($i * 0px - 250px);
+            }
+    
+            .carteledGreen#{$i}{
+                transform: rotate(($i*-4deg + 30deg));
+                right:($i * 40px - 50);
+                top:($i * -20px + 180px);
+            }
+        }
+    }
+}
+
