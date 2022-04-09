@@ -1,28 +1,19 @@
-import React, { useState, useEffect } from 'react';
+import React, {useState, useEffect} from 'react';
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import Home from "./pages/Home";
+import Home from "./pages/MakeGroup";
 import NotFound from "./pages/NotFound";
-import Validation from './pages/Validation';
 
 
 function App() {
-
-    return ( <
-        BrowserRouter >
-        <
-        Switch >
-        <
-        Route path = "/"
-        exact component = { Home }
-        /> <
-        Route path = "/Validation.js"
-        exact component = { Validation }
-        /> <
-        Route component = { NotFound }
-        /> <
-        /Switch> <
-        /BrowserRouter>
-    );
+ 
+  return (
+    <BrowserRouter>
+      <Switch>
+        <Route path="/MakeGroup" exact component={Home} />
+        <Route component={NotFound} />
+      </Switch>
+    </BrowserRouter>
+  );
 }
 
 export default App;
