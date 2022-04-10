@@ -5,16 +5,16 @@ import React from 'react';
 const Home = () => {
     return (< div classname="body" >
         <div className="header_main">
-                <div className="Desplit">DeSplit</div>
-            </div>
+            <div className="Desplit">DeSplit</div>
+        </div>
         <div className='summary'>
             <div class="contenerTextHome">
                 Welcome !
 
-                Splitting expenses is unsatisfaying: juste make it more reliable today.
-                Records debt or do immediate settlement
+                Splitting expenses is unsatisfaying: just make it more reliable today.
+                Records debt or do immediate settlement with other parties.
             </div>
-            
+
 
 
         </div>

@@ -4,25 +4,22 @@ import { useParams } from "react-router-dom";
 
 const GroupTransactions = () => {
     let { id } = useParams();
-    return ( < div >
+    return (< div >
         <body >
-        <div className="header_main">
+            <div className="header_main">
                 <div className="Desplit">DeSplit</div>
-        </div>
+            </div>
 
-     
+            <div className="Headergroup" >
+                <p className="desplitgroup" > DSplit </p> </div>
 
-        <div className = "bodygroup" >
+            <div className="bodygroup" >
+                <div className="firstheadergroup" >
+                    <p className="fhg" > Group: {id} </p>
+                    <p className="fhg" > GroupTransactions </p>
+                </div>
 
-        <div className = "firstheadergroup" >
-        <p className = "fhg" > Group: { id } </p> 
-        <p className = "fhg" > GroupTransactions </p>
-
-        </div>
-
-
-
-        </div>
+            </div>
         </body>
     </div >
     );

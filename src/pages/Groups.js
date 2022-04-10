@@ -5,40 +5,42 @@ const Groups = () => {
     <div className="Groups">
       < div >
 
-      <div className="header_main">
-                <div className="Desplit">DeSplit</div>
-            </div>
-        <div className = "bodygroup" >
+        <div className="header_main">
+          <div className="Desplit">DeSplit</div>
+        </div>
+        <div className="bodygroup" >
 
-        <details>
-          <summary>
-        <div className = "firstheadergroup" >
-        <p className = "fhg" > Group: 1</p> 
+          <details>
+            <summary>
+              <div className="firstheadergroup" >
+                <p className="fhg" > Group 1</p>
+
+              </div>
+            </summary>
+
+
+          </details>
+
+
+          <details>
+            <summary>
+              <div className="firstheadergroup" >
+                <p className="fhg" > Group 2</p>
+
+              </div>
+            </summary>
+
+
+          </details>
+          <a className='button' href='groups/1'>Add a new group</a>
 
         </div>
-          </summary>
-        
-
-        </details>
 
 
-        <details>
-          <summary>
-        <div className = "firstheadergroup" >
-        <p className = "fhg" > Group: 2</p> 
-
-        </div>
-          </summary>
-
-        </details>
-      
-        </div>
-
-        
 
 
-        
-        </div>
+
+      </div>
     </div >
   );
 };
