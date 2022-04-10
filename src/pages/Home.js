@@ -7,11 +7,10 @@ const Home = () => {
         </div>
         <div className='summary'>
             <div class="contenerTextHome">
-                Welcome !
                 <br />
-
-                Splitting expenses is unsatisfaying: just make it more reliable today.
-                Records debt or do immediate settlement with other parties.
+                <h3>Welcome to the splitting expense dApp !</h3>
+                <br />
+                Connect your wallet, use your currencies then split txs securely.
             </div>
 
 
@@ -21,7 +20,7 @@ const Home = () => {
         <a href='groups/' className='button'>
             <button className="button" ><p className="inButton"> Lauch app </p></button>
         </a>
-    </div>
+    </div >
     );
 };
 
