@@ -1,9 +1,12 @@
 import React from 'react';
 
+
+
 const Home = () => {
     return (< div classname="body" >
-        <div className='header' > DSplit </div>
-        <div className="espace"></div>
+        <div className="header_main">
+                <div className="Desplit">DeSplit</div>
+            </div>
         <div className='summary'>
             <div class="contenerTextHome">
                 Welcome !

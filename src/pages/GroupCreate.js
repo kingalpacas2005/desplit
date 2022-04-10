@@ -2,6 +2,7 @@ import React from 'react';
 import Button from '../components/Button';
 
 
+
 class GroupCreate extends React.Component {
   constructor(props) {
     super(props);
@@ -29,6 +30,11 @@ class GroupCreate extends React.Component {
   render() {
     return (
       <div className="GroupCreate">
+        <div className="header_main">
+                <div className="Desplit">DeSplit</div>
+            </div>
+
+
         <div className="hautDePage"></div>
         <div className="selectGroup">
           <div className="addGroup">

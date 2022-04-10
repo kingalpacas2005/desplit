@@ -4,8 +4,10 @@ import ChooseMoney from '../components/ChooseMoney';
 const Transaction = () => {
     return (
         <div className="transactionPage">
-            <div className="PositionMetaMask"><MetaMask></MetaMask></div>
-            <h2 className="header">DeSplit</h2>
+            <div className="header_main">
+                <div className="Desplit">DeSplit</div>
+            </div>
+            <div className="PositionMetaMask"></div>
             <div className="borderFormulaire">
                 <form className="formulaire ">
                     <div className="elementForm"><label for="group" className="groupselect">Select Group</label><br />
