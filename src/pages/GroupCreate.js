@@ -38,18 +38,18 @@ class GroupCreate extends React.Component {
         <div className="hautDePage"></div>
         <div className="selectGroup">
           <div className="addGroup">
-            <input placeholder="Enter Adress" value={this.state.addressToAdd} onChange={(event) => this.handleInputChange(event)} />
-            <button onClick={() => this.addAddress()}>Add to group</button>
+            <input  className="textAdress" placeholder="Enter Adress" value={this.state.addressToAdd} onChange={(event) => this.handleInputChange(event)} />
+            <button className="inputAdress button"onClick={() => this.addAddress()}><div className="inButton">Add to group</div></button>
           </div>
 
-          <div>
-            <ul className="listAdd">
+          <div className="contenerListAdd">
+            <ul className="listAdd borderFormulaire">
               {this.state.addresses.map(address => <li>{address}</li>)}
             </ul>
           </div>
-
-          <div>
-            <Button text="Create" clas="creatGroupe"></Button>
+          <div className="espace"></div>
+          <div className="contenerButton">
+            <a href="/groups/1/transactions"> <Button text="Create" clas="creatGroupe"></Button></a>
           </div>
 
 
