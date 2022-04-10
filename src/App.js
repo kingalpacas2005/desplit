@@ -3,7 +3,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import GroupCreate from "./pages/GroupCreate";
 import Home from "./pages/Home";
 import Groups from "./pages/Groups";
-import Group from "./pages/GroupTransactions";
+import Group from "./pages/Group";
 import Transaction from "./pages/Transaction";
 import NotFound from "./pages/NotFound";
 import Header from "./pages/Header";
