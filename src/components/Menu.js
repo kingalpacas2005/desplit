@@ -12,7 +12,6 @@ const Menu = () => {
                     <div className="aLinkMenu"><a href="/groups/create" className="linkMenu">Create Group</a></div>
                     <div className="aLinkMenu"><a href="/" className="linkMenu">Home</a></div>
                     <div className="aLinkMenu"><a href="/transaction/create" className="linkMenu">Transaction</a></div>
-                    <div className="aLinkMenu"><a href="" className="linkMenu">CGU</a></div>
                 </div>
                 
             </div>
