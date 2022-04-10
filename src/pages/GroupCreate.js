@@ -45,7 +45,7 @@ class GroupCreate extends React.Component {
           </div>
           <div className="espace"></div>
           <div className="contenerButton">
-            <Button text="Create" clas="creatGroupe"></Button>
+            <a href="/groups/1/transactions"> <Button text="Create" clas="creatGroupe"></Button></a>
           </div>
 
 
