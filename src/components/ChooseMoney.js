@@ -4,7 +4,7 @@ const ChooseMoney = () => {
     return (
         <div>
             <details>
-            <summary><div className="button">Choose your money</div></summary>
+            <summary><div className="button">Choose your currency</div></summary>
             <lu className="someMoney">
                 <li className="oneMoney">
                     BitCoin <img src="./../img/BTC.png" className="money"/>

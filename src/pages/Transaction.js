@@ -13,6 +13,7 @@ const Transaction = () => {
                     <select name="group" id="group">
                         <option value="1">Group 1</option>
                         <option value="2">Group 2</option>
+                        <option value="2">Group 3</option>
                     </select></div>
                     <div className="elementForm"><label for="recipient">recipient</label>
                     <input type="text" name="recipient"></input></div>
