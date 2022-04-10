@@ -1,4 +1,55 @@
  .EnterAdressGroup
 {
     font-size:32px;
+
+
+    input{
+        font-size:25px;
+    }
+}
+
+.textAdress,.inputAdress{
+    font-size:25px;
+    border-radius: 10px;
+}
+
+.inputAdress{
+    margin-left:30px;
+}
+
+.addGroup{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenerListAdd{
+    width:100vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.contenerButton{
+    width:100vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.listAdd
+{
+    padding:20px;
+
+    li{
+        padding:10px;
+        margin:5px;
+
+        border-bottom:1px solid rgb(181, 23, 212)
+    }
+}
+
+.textAdress{
+    border-radius: 10px;
 }

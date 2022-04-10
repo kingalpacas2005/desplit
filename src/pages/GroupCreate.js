@@ -29,20 +29,22 @@ class GroupCreate extends React.Component {
   render() {
     return (
       <div className="GroupCreate">
+         <div className='header' > DSplit </div>
+         <div className="espace"></div>
         <div className="hautDePage"></div>
         <div className="selectGroup">
           <div className="addGroup">
-            <input placeholder="Enter Adress" value={this.state.addressToAdd} onChange={(event) => this.handleInputChange(event)} />
-            <button onClick={() => this.addAddress()}>Add to group</button>
+            <input  className="textAdress" placeholder="Enter Adress" value={this.state.addressToAdd} onChange={(event) => this.handleInputChange(event)} />
+            <button className="inputAdress button"onClick={() => this.addAddress()}><div className="inButton">Add to group</div></button>
           </div>
 
-          <div>
-            <ul className="listAdd">
+          <div className="contenerListAdd">
+            <ul className="listAdd borderFormulaire">
               {this.state.addresses.map(address => <li>{address}</li>)}
             </ul>
           </div>
-
-          <div>
+          <div className="espace"></div>
+          <div className="contenerButton">
             <Button text="Create" clas="creatGroupe"></Button>
           </div>
 
