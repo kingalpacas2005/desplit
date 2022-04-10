@@ -5,7 +5,7 @@
     font-size:30px;
     text-align:center;
 
-    border-radius:20px;
+    border-radius:20px 0px 0px 0px;
 
     padding:0px;
 
@@ -13,12 +13,31 @@
     justify-content:center;
     align-items:center;
 
+    width:300px;
+    height:100px;
+
+    position:fixed;
+    bottom:0;
+    right:0;
+
+
     .MetaMaskImage
     {
         width:50px;
         height:50px;
     }
+
+    .contenerAdress
+    {
+        width:140px;
+        height:70px;
+        font-size:20px;
+        overflow-wrap: anywhere;
+        overflow: hidden;
+    }
 }
+
+
 
 .buton{
     font-size:30px;

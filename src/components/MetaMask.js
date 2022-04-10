@@ -24,9 +24,9 @@ class MetaMask extends React.Component {
         if (this.state.wallet.accountAddress) {
             return (
                 <div>
-                    <p>
-                        Address: {this.state.wallet.accountAddress}
-                    </p>
+                    <div className="metaMask" >
+                    <img src="./../img/MetaMask.jpg" className="MetaMaskImage" /><p className="contenerAdress">{this.state.wallet.accountAddress}</p> 
+                    </div>
                 </div>
             )
         }
@@ -34,10 +34,14 @@ class MetaMask extends React.Component {
             return (
                 <div>
                     <p>
-                        Address: {this.state.accountAddress}
+                        {this.state.accountAddress}
                     </p>
-                    <p>METAMASK</p>
-                    <button onClick={() => this.connectWallet()}>Connect Wallet</button>
+                    
+                    <button onClick={() => this.connectWallet()}>
+                        <div className="metaMask" >
+                            <img src="./../img/MetaMask.jpg" className="MetaMaskImage" /><p>METAMASK</p>
+                        </div>
+                    </button>
                 </div>
             )
 
@@ -45,11 +49,11 @@ class MetaMask extends React.Component {
     }
     render() {
         return (
-            <div className="metaMask" >
-                <img src="./../img/MetaMask.jpg" className="MetaMaskImage" />
-
+            <div>
                 {this.renderAddress()}
             </div>
+            
+            
         )
     }
 };
