@@ -52,6 +52,13 @@
     margin-right: 100px;
 }
 
+
+.validated{
+    float: left;
+    color: #00FF00;
+    cursor: pointer;
+}
+
 .accept {
     float: left;
     color: #00FF00;
@@ -61,7 +68,7 @@
 .reject {
     float: right;
     color: #DC143C;
-    cursor: pointer
+    cursor: pointer;
 }
 
 .a1 {

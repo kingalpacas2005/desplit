@@ -49,7 +49,7 @@ class GroupCreate extends React.Component {
           </div>
           <div className="espace"></div>
           <div className="contenerButton">
-            <a href="/groups/1"> <Button text="Create" clas="creatGroupe"></Button></a>
+            <a href="/groups/4"> <Button text="Create" clas="creatGroupe"></Button></a>
           </div>
 
 
