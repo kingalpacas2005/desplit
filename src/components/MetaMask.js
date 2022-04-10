@@ -38,10 +38,10 @@ class MetaMask extends React.Component {
                     <p>
                         {this.state.accountAddress}
                     </p>
-
                     <button onClick={() => this.connectWallet()}>
                         <div className="metaMask" >
-                            <img src="./../img/MetaMask.jpg" className="MetaMaskImage" /><p>METAMASK</p>
+                            <img src="./../img/MetaMask.jpg" className="MetaMaskImage" />
+                            <p>METAMASK</p>
                         </div>
                     </button>
                 </div>
