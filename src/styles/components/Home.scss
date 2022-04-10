@@ -21,6 +21,13 @@
 
 .summary{
     font-size: 40px;
+    display:flex;
+    justify-content: center;
+
+    .contenerTextHome{
+        width:95vw;
+        max-width:1100px;
+    }
 }
 
 

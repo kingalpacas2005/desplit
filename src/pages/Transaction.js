@@ -18,9 +18,9 @@ const Transaction = () => {
                     <input type="text" name="recipient"></input></div>
                     <div className="elementForm"><label for="Amount">Amount</label>
                     <input type="text" name="Amount"></input></div>
-                    <div className="elementForm elementFormCheck"><input type="checkbox" name="checkTransaction"></input><label for="checkTransaction">Immediate settlement on</label></div>
+                    <div className="elementForm elementFormCheck checkAndMoney"><input type="checkbox" name="checkTransaction"></input><label for="checkTransaction">Immediate settlement off   </label><ChooseMoney></ChooseMoney></div>
                     <div className="elementForm"><input type="submit" value="Submit"></input></div>
-                    <ChooseMoney></ChooseMoney>
+                    
                 </form>
             </div>
         </div>

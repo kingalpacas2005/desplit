@@ -11,15 +11,16 @@
         transition-duration: 0.5s;
         display:flex;
         width:100vw;
-        
+        margin:0;
+
         height:100px;
         justify-content: space-around;
         align-items: center;
-        background-color:rgba(255,255,255,0.5);
+        background-color:rgba(255, 255, 255, 0.829);
     
         position:fixed;
         top:0px;
-        transform: translateY(-100px);
+        transform: translateY(-100px) translateX(-10px);
         
         .bordureMenu{
             display:flex;
@@ -30,7 +31,7 @@
             height:100%;
 
             .linkMenu{
-                color:white !important;
+                color:black !important;
                 text-decoration: none;
         
                 &:hover{
@@ -44,7 +45,7 @@
 
     &:hover{
         .menu{
-            transform: translateY(0px);
+            transform: translateY(0px) translateX(-10px);
         }
     }
 }
