@@ -10,8 +10,7 @@ const Menu = () => {
                 <div className="bordureMenu">
                     <div className="aLinkMenu"><a href="/" className="linkMenu">Home</a></div>
                     <div className="aLinkMenu"><a href="/groups/create" className="linkMenu">Create Group</a></div>
-                    <div className="aLinkMenu"><a href="/groups" className="linkMenu">Groups Balances</a></div>
-                    <div className="aLinkMenu"><a href="/transaction/create" className="linkMenu">Transact</a></div>
+                    <div className="aLinkMenu"><a href="/groups" className="linkMenu">Groups</a></div>
                 </div>
 
             </div>

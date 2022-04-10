@@ -27,7 +27,9 @@ class MetaMask extends React.Component {
             return (
                 <div>
                     <div className="metaMask" >
-                        <img src="./../img/MetaMask.jpg" className="MetaMaskImage" /><p className="contenerAdress">Connected !{this.state.wallet.accountAddress}</p>
+                        <img src="./../img/MetaMask.jpg" className="MetaMaskImage" />
+                        <p className="contenerAdress">Connected !</p>
+                        <p>{this.state.wallet.accountAddress}</p>
                     </div>
                 </div>
             )

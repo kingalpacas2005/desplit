@@ -5,9 +5,8 @@ const Transaction = () => {
     return (
         <div className="transactionPage">
             <div className="header_main">
-                <div className="Desplit">DeSplit</div>
+                <div className="Desplit">DSplit</div>
             </div>
-            <div className="PositionMetaMask"></div>
             <div className="borderFormulaire">
                 <form className="formulaire ">
                     <div className="elementForm"><label for="group" className="groupselect">Select Group</label><br />

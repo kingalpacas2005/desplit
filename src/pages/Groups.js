@@ -6,7 +6,7 @@ const Groups = () => {
       < div >
 
         <div className="header_main">
-          <div className="Desplit">DeSplit</div>
+          <div className="Desplit">DSplit</div>
         </div>
         <div className="bodygroup" >
 
@@ -32,7 +32,7 @@ const Groups = () => {
 
 
           </details>
-          <a className='button' href='groups/1'>Add a new group</a>
+          <a className='button' href='/groups/create/'>Add a new group</a>
 
         </div>
 

@@ -7,7 +7,7 @@ const GroupTransactions = () => {
     return (< div >
         <body >
             <div className="header_main">
-                <div className="Desplit">DeSplit</div>
+                <div className="Desplit">DSplit</div>
             </div>
 
             <div className="Headergroup" >

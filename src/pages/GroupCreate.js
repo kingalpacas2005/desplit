@@ -31,15 +31,15 @@ class GroupCreate extends React.Component {
     return (
       <div className="GroupCreate">
         <div className="header_main">
-                <div className="Desplit">DeSplit</div>
-            </div>
+          <div className="Desplit">DSplit</div>
+        </div>
 
 
         <div className="hautDePage"></div>
         <div className="selectGroup">
           <div className="addGroup">
-            <input  className="textAdress" placeholder="Enter Adress" value={this.state.addressToAdd} onChange={(event) => this.handleInputChange(event)} />
-            <button className="inputAdress button"onClick={() => this.addAddress()}><div className="inButton">Add to group</div></button>
+            <input className="textAdress" placeholder="Enter Adress" value={this.state.addressToAdd} onChange={(event) => this.handleInputChange(event)} />
+            <button className="inputAdress button" onClick={() => this.addAddress()}><div className="inButton">Add to group</div></button>
           </div>
 
           <div className="contenerListAdd">
@@ -49,7 +49,7 @@ class GroupCreate extends React.Component {
           </div>
           <div className="espace"></div>
           <div className="contenerButton">
-            <a href="/groups/1/transactions"> <Button text="Create" clas="creatGroupe"></Button></a>
+            <a href="/groups/1"> <Button text="Create" clas="creatGroupe"></Button></a>
           </div>
 
 

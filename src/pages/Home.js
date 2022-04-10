@@ -5,7 +5,7 @@ import React from 'react';
 const Home = () => {
     return (< div classname="body" >
         <div className="header_main">
-            <div className="Desplit">DeSplit</div>
+            <div className="Desplit">DSplit</div>
         </div>
         <div className='summary'>
             <div class="contenerTextHome">
