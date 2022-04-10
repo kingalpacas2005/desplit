@@ -21,32 +21,7 @@
         
         
         
-        .elementForm{
-            margin:20px;
-
-            label{
-                font-size:30px;
-                margin-right:20px;
-            }
-
-            input,select{
-                font-size:28px;
-            }
-
-            .checkTransaction
-            {
-                width:25px;
-                height:25px;
-                
-            }
-
-           
-            select{
-                margin-top:10px;
-            }
-
-            
-        } 
+         
 
     }
 
@@ -75,3 +50,63 @@
     height:28px;
 }
 
+.inputdiv{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ammountdiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    background-color: lightblue;
+    margin-left: 15px;
+    width: 300px;
+    border: none;
+    height: 30px;
+    border-radius: 5px;
+}
+.name{
+    color: rgb(195, 255, 0);
+    margin-right: 15px;
+    width: 100px;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+.recipientdiv{
+    display:flex;
+    flex-direction:row;
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+
+.ammountdiv{
+    display:flex;
+    flex-direction:row;
+    margin-top: 15px;
+}
+
+.grupdrop{
+    border-radius: 7px;
+    border: none;
+    background-color: green;
+    color: white;
+}
+
+.button{
+    margin-left: 50px;
+}
+
+.Submitform{
+    border: none;
+    background-color: rgb(54, 54, 93);
+    margin-bottom: 10px;
+}

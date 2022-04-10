@@ -13,7 +13,7 @@ const GroupCreate = () => {
   }
 
   return (
-    <div className="GroupCreate">
+    <div className="GroupCreate"> 
       <div className="hautDePage"></div>
       <div className="selectGroup">
         <MetaMask></MetaMask>
