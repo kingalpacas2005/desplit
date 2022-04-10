@@ -10,7 +10,7 @@ const Home = () => {
                 <br />
                 <h3>Welcome to the splitting expense dApp !</h3>
                 <br />
-                Connect your wallet, use your currencies then split txs securely.
+                Connect your wallet, use your cryptos then split transactions securely.
             </div>
 
 

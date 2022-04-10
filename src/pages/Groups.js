@@ -10,18 +10,18 @@ const Groups = () => {
         </div>
         <div className="bodygroup" >
 
-          <div className="firstheadergroup" >
+          <h3 className="firstheadergroup" >
             Group 1
-          </div>
+          </h3>
           <br />
-          <div className="firstheadergroup" >
+          <h3 className="firstheadergroup" >
             Group 2
-          </div>
+          </h3>
           <br />
 
-          <div className="firstheadergroup" >
+          <h3 className="firstheadergroup" >
             Group 3
-          </div>
+          </h3>
           <br />
 
           <a className='button' href='/groups/create/'>Add a new group</a>

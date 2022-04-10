@@ -12,7 +12,7 @@ const Group = () => {
             </div>
 
             <div className="bodygroup" >
-                Group: {id}
+                <i>Group {id}</i>
                 <div>
                     <br />
                 </div>
@@ -62,9 +62,6 @@ const Group = () => {
 
 
 
-
-
-
                     <h2>Add a new transaction</h2>
 
                     <form className="formulaire ">
@@ -95,7 +92,7 @@ const Group = () => {
 
                 </div>
             </div >
-        </div>
+        </div >
     );
 }
 

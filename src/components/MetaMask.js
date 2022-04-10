@@ -18,20 +18,22 @@ class MetaMask extends React.Component {
             let w = { address: accounts[0] };
             window.localStorage.setItem("wallet", { w });
             this.setState({ wallet: w });
-            alert("Connected !");
         }
     }
 
     renderAddress() {
         if (this.state.wallet.address) {
             return (
-                
-                    <div className="metaMask" >
-                        <img src="./../img/MetaMask.jpg" className="MetaMaskImage" />
-                        <p className="contenerAdress">Connected !</p>
-                        <p>{this.state.wallet.accountAddress}</p>
-                    </div>
-                
+
+                <div className="metaMask" >
+                    <img src="./../img/MetaMask.jpg" className="MetaMaskImage" />
+                    <p className="contenerAdress">
+                        Connected. <br />
+                        Yay !
+                    </p>
+                    <p>{this.state.wallet.accountAddress}</p>
+                </div>
+
             )
         }
         else {
