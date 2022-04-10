@@ -15,7 +15,6 @@ class MetaMask extends React.Component {
         if (window.ethereum) {
             const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
             this.setState({ wallet: { accountAddress: accounts[0] } });
-            this.props.onWalletChange(this.state.wallet);
             alert("Connected !");
         }
     }
