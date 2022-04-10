@@ -7,7 +7,7 @@ const GroupTransactions = () => {
         <body >
 
         <div className = "Headergroup" >
-        <p className = "desplitgroup" > DeSplit </p> </div>
+        <p className = "desplitgroup" > DSplit </p> </div>
 
         <div className = "bodygroup" >
 
