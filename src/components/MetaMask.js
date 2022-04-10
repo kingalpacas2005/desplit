@@ -5,26 +5,27 @@ class MetaMask extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            accountAddress: "",
+            wallet: {
+                accountAddress: "",
+            }
         };
     }
 
     async connectWallet() {
         if (window.ethereum) {
             const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
-            this.setState({ accountAddress: accounts[0] });
-            console.log(this.state.accountAddress);
+            this.setState({ wallet: { accountAddress: accounts[0] } });
+            this.props.onWalletChange(this.state.wallet);
             alert("Connected !");
         }
     }
 
     renderAddress() {
-        if (this.state.accountAddress) {
+        if (this.state.wallet.accountAddress) {
             return (
                 <div>
-                    <img src="./../img/MetaMask.jpg" className="MetaMaskImage" />
                     <p>
-                        Address: {this.state.accountAddress}
+                        Address: {this.state.wallet.accountAddress}
                     </p>
                 </div>
             )
@@ -35,7 +36,6 @@ class MetaMask extends React.Component {
                     <p>
                         Address: {this.state.accountAddress}
                     </p>
-                    <img src="./../img/MetaMask.jpg" className="MetaMaskImage" />
                     <p>METAMASK</p>
                     <button onClick={() => this.connectWallet()}>Connect Wallet</button>
                 </div>
@@ -46,6 +46,8 @@ class MetaMask extends React.Component {
     render() {
         return (
             <div className="metaMask" >
+                <img src="./../img/MetaMask.jpg" className="MetaMaskImage" />
+
                 {this.renderAddress()}
             </div>
         )
