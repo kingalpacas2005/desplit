@@ -25,13 +25,13 @@ class MetaMask extends React.Component {
     renderAddress() {
         if (this.state.wallet.address) {
             return (
-                <div>
+                
                     <div className="metaMask" >
                         <img src="./../img/MetaMask.jpg" className="MetaMaskImage" />
                         <p className="contenerAdress">Connected !</p>
                         <p>{this.state.wallet.accountAddress}</p>
                     </div>
-                </div>
+                
             )
         }
         else {
@@ -40,7 +40,7 @@ class MetaMask extends React.Component {
                     <p>
                         {this.state.accountAddress}
                     </p>
-                    <button onClick={() => this.connectWallet()}>
+                    <button className="buttonVaVite" onClick={() => this.connectWallet()}>
                         <div className="metaMask" >
                             <img src="./../img/MetaMask.jpg" className="MetaMaskImage" />
                             <p>METAMASK</p>
