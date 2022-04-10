@@ -40,6 +40,7 @@
                 
             }
 
+           
             select{
                 margin-top:10px;
             }
@@ -62,3 +63,15 @@
     }
 
 }
+
+.checkAndMoney{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkTransaction{
+    width:28px;
+    height:28px;
+}
+

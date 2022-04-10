@@ -1,0 +1,53 @@
+
+
+.contenerMenu
+{
+    
+    width:100vw;
+    height:100px;
+
+    
+    .menu{
+        transition-duration: 0.5s;
+        display:flex;
+        width:100vw;
+        margin:0;
+
+        height:100px;
+        justify-content: space-around;
+        align-items: center;
+        background-color:rgba(255, 255, 255, 0.829);
+    
+        position:fixed;
+        top:0px;
+        transform: translateY(-100px) translateX(-10px);
+        
+        .bordureMenu{
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+            width:95vw;
+            max-width: 1000px;
+            height:100%;
+
+            .linkMenu{
+                color:black !important;
+                text-decoration: none;
+        
+                &:hover{
+                    text-decoration:underline;
+                }
+            }
+        }
+        
+        
+    }
+
+    &:hover{
+        .menu{
+            transform: translateY(0px) translateX(-10px);
+        }
+    }
+}
+
+
