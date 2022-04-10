@@ -10,35 +10,23 @@ const Groups = () => {
         </div>
         <div className="bodygroup" >
 
-          <details>
-            <summary>
-              <div className="firstheadergroup" >
-                <p className="fhg" > Group 1</p>
+          <div className="firstheadergroup" >
+            Group 1
+          </div>
+          <br />
+          <div className="firstheadergroup" >
+            Group 2
+          </div>
+          <br />
 
-              </div>
-            </summary>
+          <div className="firstheadergroup" >
+            Group 3
+          </div>
+          <br />
 
-
-          </details>
-
-
-          <details>
-            <summary>
-              <div className="firstheadergroup" >
-                <p className="fhg" > Group 2</p>
-
-              </div>
-            </summary>
-
-
-          </details>
           <a className='button' href='/groups/create/'>Add a new group</a>
 
         </div>
-
-
-
-
 
       </div>
     </div >

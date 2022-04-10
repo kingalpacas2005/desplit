@@ -1,7 +1,5 @@
 import React from 'react';
 
-
-
 const Home = () => {
     return (< div classname="body" >
         <div className="header_main">
@@ -10,6 +8,7 @@ const Home = () => {
         <div className='summary'>
             <div class="contenerTextHome">
                 Welcome !
+                <br />
 
                 Splitting expenses is unsatisfaying: just make it more reliable today.
                 Records debt or do immediate settlement with other parties.

@@ -7,13 +7,15 @@ const Group = () => {
     let { id } = useParams();
     return (
         < div >
-            <p className="fhg" > Group: {id} </p>
             <div className="header_main">
                 <div className="Desplit">DSplit</div>
             </div>
 
             <div className="bodygroup" >
-
+                Group: {id}
+                <div>
+                    <br />
+                </div>
                 <div className="firstheadergroup" >
 
                     <div className="addressesgroup">
