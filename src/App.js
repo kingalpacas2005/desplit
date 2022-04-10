@@ -7,7 +7,6 @@ import GroupTransactions from "./pages/GroupTransactions";
 import Transaction from "./pages/Transaction";
 import NotFound from "./pages/NotFound";
 
-
 function App() {
 
   return (< BrowserRouter >

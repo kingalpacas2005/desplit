@@ -1,30 +1,33 @@
 import React from 'react';
+// import { wallet, reset, set } from "../wallet"
+
 
 
 class MetaMask extends React.Component {
     constructor(props) {
         super(props);
+        console.log(window.localStorage.getItem("wallet"));
         this.state = {
-            wallet: {
-                accountAddress: "",
-            }
+            wallet: window.localStorage.getItem("wallet") | {}
         };
     }
 
     async connectWallet() {
         if (window.ethereum) {
             const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
-            this.setState({ wallet: { accountAddress: accounts[0] } });
+            let w = { address: accounts[0] };
+            window.localStorage.setItem("wallet", { w });
+            this.setState({ wallet: w });
             alert("Connected !");
         }
     }
 
     renderAddress() {
-        if (this.state.wallet.accountAddress) {
+        if (this.state.wallet.address) {
             return (
                 <div>
                     <div className="metaMask" >
-                    <img src="./../img/MetaMask.jpg" className="MetaMaskImage" /><p className="contenerAdress">{this.state.wallet.accountAddress}</p> 
+                        <img src="./../img/MetaMask.jpg" className="MetaMaskImage" /><p className="contenerAdress">{this.state.wallet.accountAddress}</p>
                     </div>
                 </div>
             )
@@ -35,7 +38,7 @@ class MetaMask extends React.Component {
                     <p>
                         {this.state.accountAddress}
                     </p>
-                    
+
                     <button onClick={() => this.connectWallet()}>
                         <div className="metaMask" >
                             <img src="./../img/MetaMask.jpg" className="MetaMaskImage" /><p>METAMASK</p>
@@ -51,8 +54,8 @@ class MetaMask extends React.Component {
             <div>
                 {this.renderAddress()}
             </div>
-            
-            
+
+
         )
     }
 };

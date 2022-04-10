@@ -1,21 +1,29 @@
 import React from 'react';
 import Button from '../components/Button';
-import MetaMask from '../components/MetaMask';
 
 
 class GroupCreate extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      addresses: [1, 10]
+      addresses: [
+        "0xbda5747bfd65f08deb54cb465eb87d40e51b197e",
+        "0xdd2fd4581271e230360230f9337d5c0430bf44c0",
+        "0x8626f6940e2eb28930efb4cef49b2d1f2c9c1199",
+      ],
+      addressToAdd: "0x1cbd3b2770909d4e10f157cabc84c7264073c9ec"
     };
   }
 
-  addAddress(address) {
-    console.log(address)
+  addAddress() {
+    this.setState({ addresses: [...this.state.addresses, this.state.addressToAdd] });
   }
-  getWallet(wallet) {
-    console.log("in wallet", wallet);
+
+  handleInputChange(e) {
+    this.setState({
+      addresses: this.state.addresses,
+      addressToAdd: e.target.value
+    })
   }
 
   render() {
@@ -24,8 +32,8 @@ class GroupCreate extends React.Component {
         <div className="hautDePage"></div>
         <div className="selectGroup">
           <div className="addGroup">
-            <input type="text" placeholder="Enter Adress" classNames="EnterAdressGroup" />
-            <button onClick={this.addAddress()}>Add to group</button>
+            <input placeholder="Enter Adress" value={this.state.addressToAdd} onChange={(event) => this.handleInputChange(event)} />
+            <button onClick={() => this.addAddress()}>Add to group</button>
           </div>
 
           <div>

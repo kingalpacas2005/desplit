@@ -1,5 +1,4 @@
 import React from 'react';
-import MetaMask from '../components/MetaMask';
 import ChooseMoney from '../components/ChooseMoney';
 
 const Transaction = () => {
